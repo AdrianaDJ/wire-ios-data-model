@@ -179,13 +179,15 @@ import CoreData
 
     /// Call this when the application enters the background to stop sending notifications and clear current changes.
 
-    @objc func applicationDidEnterBackground() {
+    @objc
+    public func applicationDidEnterBackground() {
         isEnabled = false
     }
     
     /// Call this when the application will enter the foreground to start sending notifications again.
 
-    @objc func applicationWillEnterForeground() {
+    @objc
+    public func applicationWillEnterForeground() {
         isEnabled = true
     }
 
